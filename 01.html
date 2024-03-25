@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .traffic-light {
+  width: 50px; /* 红绿灯的宽度 */
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px; /* 圆角边框 */
+  display: flex;
+  flex-direction: column; /* 垂直排列灯 */
+  align-items: center;
+}
+
+.light {
+  width: 30px; /* 灯的大小 */
+  height: 30px;
+  border-radius: 50%; /* 圆形灯 */
+  margin: 10px 0; /* 灯与灯之间的间隔 */
+  background-color: #333; /* 默认灯的颜色（关闭状态） */
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+</style>
+<body>
+  <div class="traffic-light">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>  
+</body>
+<script>
+  setTimeout(() => {
+    changeLight()
+  }, 6000);
+</script>
+</html>

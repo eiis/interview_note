@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    window.location.hash = '#section1';
+    window.addEventListener('hashchange', function() {
+      // 当 URL 的哈希部分发生变化时触发
+      console.log('Hash changed:', window.location.hash);
+      // 可以在这里执行相应的逻辑，例如更新页面内容或执行导航操作
+    });
+  </script>
+</body>
+</html>

@@ -85,5 +85,18 @@ const newRequest = (url, config, otherConfig) => {
     });
 };
 
-// 导出新的request函数
-export { newRequest };
+// 定义封装好的post方法
+const post = (url, data, otherConfig) => {
+  return newRequest(url, { method: 'POST', data }, otherConfig);
+};
+
+// 定义封装好的get方法
+const get = (url, params, otherConfig) => {
+  return newRequest(url, { method: 'GET', data: params }, otherConfig);
+};
+
+// 导出post和get方法
+export { post, get };
+
+// // 导出新的request函数
+// export { newRequest };

@@ -16,3 +16,5 @@
 console.log(null + 1);
 console.log(undefined + 1);
 // console.log(this);
+console.log(Number(undefined));
+console.log(Object.prototype);

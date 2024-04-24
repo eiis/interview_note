@@ -12,3 +12,4 @@ const obj ={
 
 console.log(transform(obj,['a','b','c']));
 console.log(transform(obj,['a','b','d']));
+export{}

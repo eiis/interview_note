@@ -28,21 +28,34 @@
 // bar();
 
 
-function fn(){
-  console.log(this);
-}
+// function fn(){
+//   console.log(this);
+// }
 
-const obj ={
-  name:'coder',
-  fn
-}
+// const obj ={
+//   name:'coder',
+//   fn
+// }
 // fn() //global
 // obj.fn()  //obj
 // var o = obj.fn
 // o() //global
-const f=()=>{
-  console.log(this);
-}
-f()
+// const f=()=>{
+//   console.log(this);
+// }
+// f()
 // fn.apply(obj)
 
+
+
+function foo(func){
+  func()
+}
+
+var obj ={
+  name:'t',
+  bar:function(){
+    console.log(this)
+  }
+}
+foo(obj.bar)
